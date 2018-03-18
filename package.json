@@ -15,16 +15,18 @@
     "extends": "prettier"
   },
   "dependencies": {
+    "fs-router": "^0.4.1",
+    "lodash": "^4.17.5",
     "micro": "latest"
   },
   "license": "MIT",
   "devDependencies": {
     "ava": "0.21.0",
     "eslint-config-prettier": "2.3.0",
+    "micro-dev": "latest",
     "prettier": "1.5.3",
     "request-promise": "4.2.1",
     "test-listen": "1.0.2",
-    "xo": "0.18.2",
-    "micro-dev": "latest"
+    "xo": "0.18.2"
   }
 }
