@@ -8,7 +8,7 @@ const {
 } = require('#libs/constants')
 
 // Load mock switch module if not running on rpi hardware.
-const isPi = process.env.NODE_ENV === 'raspberrypi'
+const isPi = process.env.HARDWARE === 'raspberrypi'
 const Switch = isPi
     ? require('./physical/switch')
     : require('./mock/switch')
@@ -21,9 +21,9 @@ const things = new Map()
 const switchUid = uidGenerator('SW')
 
 // Mock some things!
-const ceilingLight = new Switch('ceiling light', 0, false)
+const ceilingLight = new Switch('ceiling light', 7, false)
 things.set(switchUid.next().value, ceilingLight)
-const deskLight = new Switch('desk light', 1, false)
+const deskLight = new Switch('desk light', 11, false)
 things.set(switchUid.next().value, deskLight)
 
 function getThings() {
