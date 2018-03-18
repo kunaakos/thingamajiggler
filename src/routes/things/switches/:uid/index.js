@@ -2,11 +2,12 @@ const { send } = require('micro')
 const thingManager = require('#things/manager.js')
 const { switchResponseData } = require('#things/utils.js')
 
-const UID = 0
-const CONTROLLER = 1
-
-const ERR__INVALID_PARAM = 'invalid_parameter'
-const ERR__INVALID_PARAM_VALUE = 'invalid_parameter_value'
+const {
+    UID,
+    CONTROLLER,
+    ERR__INVALID_PARAM,
+    ERR__INVALID_PARAM_VALUE
+} = require('#libs/constants')
 
 module.exports.GET = async function(req, res) {
     const uid = req.params.uid
