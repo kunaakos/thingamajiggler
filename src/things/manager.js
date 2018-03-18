@@ -1,4 +1,4 @@
-const uidGenerator = require('../libs/uid-generator')
+const uidGenerator = require('#libs/uid-generator')
 
 const ERR__INVALID_SWITCH_ID = 'invalid_switch_id'
 const TYPE_SWITCH = 'SWITCH'

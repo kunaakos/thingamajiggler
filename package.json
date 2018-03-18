@@ -1,5 +1,5 @@
 {
-  "name": "micro-service",
+  "name": "thingamajuggler-api",
   "version": "0.0.0",
   "main": "src/index.js",
   "scripts": {
@@ -14,10 +14,16 @@
   "xo": {
     "extends": "prettier"
   },
+  "_moduleAliases": {
+    "#libs": "src/libs",
+    "#routes": "src/routes",
+    "#things": "src/things"
+  },
   "dependencies": {
     "fs-router": "^0.4.1",
     "lodash": "^4.17.5",
-    "micro": "latest"
+    "micro": "latest",
+    "module-alias": "^2.0.6"
   },
   "license": "MIT",
   "devDependencies": {

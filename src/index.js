@@ -1,3 +1,7 @@
+// Directory aliases are configured in package.json and prefixed with "#".
+// https://www.npmjs.com/package/module-alias
+require('module-alias/register')
+
 const { send } = require('micro')
 const match = require('fs-router')(__dirname + '/routes')
 

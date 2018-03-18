@@ -1,6 +1,6 @@
 const { send } = require('micro')
-const thingManager = require('../../../../things/manager.js')
-const { switchResponseData } = require('../../../../things/utils.js')
+const thingManager = require('#things/manager.js')
+const { switchResponseData } = require('#things/utils.js')
 
 const UID = 0
 const CONTROLLER = 1

@@ -2947,6 +2947,10 @@ mixin-deep@^1.2.0:
   dependencies:
     minimist "0.0.8"
 
+module-alias@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/module-alias/-/module-alias-2.0.6.tgz#abb2cfa07014f503514ad5061c6f03d79b591889"
+
 mri@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/mri/-/mri-1.1.0.tgz#5c0a3f29c8ccffbbb1ec941dcec09d71fa32f36a"

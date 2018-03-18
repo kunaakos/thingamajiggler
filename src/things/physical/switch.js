@@ -1,4 +1,4 @@
-const Thing = require('../abstract/thing')
+const Thing = require('#things/abstract/thing')
 
 class Switch extends Thing {
     constructor() {
