@@ -1,10 +1,11 @@
 const uidGenerator = require('#libs/uid-generator')
 
-const ERR__INVALID_SWITCH_ID = 'invalid_switch_id'
-const TYPE_SWITCH = 'SWITCH'
-
-const UID = 0
-const CONTROLLER = 1
+const {
+    ERR__INVALID_SWITCH_ID,
+    TYPE_SWITCH,
+    UID,
+    CONTROLLER
+} = require('#libs/constants')
 
 // Load mock switch module if not running on rpi hardware.
 const isPi = process.env.NODE_ENV === 'raspberrypi'

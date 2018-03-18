@@ -1,6 +1,8 @@
 const Thing = require('#things/abstract/thing')
 
-const TYPE_SWITCH = 'SWITCH'
+const {
+    TYPE_SWITCH
+} = require('#libs/constants')
 
 class Switch extends Thing {
     constructor(name, pin, state) {

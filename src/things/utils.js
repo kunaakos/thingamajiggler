@@ -1,8 +1,9 @@
 const _ = require('lodash')
 
-const ERR__UNSUPPORTED_THING_TYPE = 'unsupported_thing_type'
-
-const TYPE_SWITCH = 'SWITCH'
+const {
+    ERR__UNSUPPORTED_THING_TYPE,
+    TYPE_SWITCH,
+} = require('#libs/constants')
 
 function switchResponseData(switchController) {
     let data = _.pick(switchController, [

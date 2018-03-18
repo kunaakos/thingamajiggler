@@ -2,8 +2,10 @@ const { send } = require('micro')
 const thingManager = require('#things/manager.js')
 const { switchResponseData } = require('#things/utils.js')
 
-const UID = 0
-const CONTROLLER = 1
+const {
+    UID,
+    CONTROLLER
+} = require('#libs/constants')
 
 module.exports.GET = function(req, res) {
     const switchData = thingManager
