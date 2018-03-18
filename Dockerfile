@@ -1,11 +1,11 @@
-FROM mhart/alpine-node
+FROM arm32v7/node
 
 LABEL name "micro-service"
 
 RUN mkdir /app
 WORKDIR /app
 COPY package.json /app
-RUN npm install --production
+RUN yarn install --production
 COPY src/ /app/src
 
 EXPOSE 3000
